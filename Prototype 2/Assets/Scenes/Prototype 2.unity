@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657916, g: 0.49641317, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657958, g: 0.49641395, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -450,12 +450,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &638460124 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 143937485238756895, guid: d37bb9e19112f2f4d855668780915b6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 143937485742458563}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &920434656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -546,12 +540,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1040431340 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3432687401799667623, guid: bd499794838a7fe459f04c5aee4945cb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3432687400960784203}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1121066347
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,9 +570,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefabs:
-  - {fileID: 1798440890}
-  - {fileID: 1040431340}
-  - {fileID: 638460124}
+  - {fileID: 143937485238756895, guid: d37bb9e19112f2f4d855668780915b6c, type: 3}
+  - {fileID: 3432687401799667623, guid: bd499794838a7fe459f04c5aee4945cb, type: 3}
+  - {fileID: 5929204287605386017, guid: 2822bcec319745b47b5ecc70f91e5d03, type: 3}
+  animalIndex: 0
 --- !u!4 &1121066349
 Transform:
   m_ObjectHideFlags: 0
@@ -677,12 +666,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590138454}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1798440890 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5929204287605386017, guid: 2822bcec319745b47b5ecc70f91e5d03,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929204288223128731}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1825187193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 3bd8a450fcb589542a7843ea7bda2ee6,
@@ -704,8 +687,7 @@ MonoBehaviour:
   horizontalInput: 0
   speed: 10
   xRange: 10
-  projectilePrefab: {fileID: 7483640510505252355, guid: a5b49f82e1ad17c448b9d042acbaaa93,
-    type: 3}
+  projectilePrefab: {fileID: 0}
 --- !u!1001 &143937485742458563
 PrefabInstance:
   m_ObjectHideFlags: 0
