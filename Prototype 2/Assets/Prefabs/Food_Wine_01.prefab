@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1352144824}
   - component: {fileID: -397129883218656051}
   - component: {fileID: 2531497098714138220}
+  - component: {fileID: 2138568409}
   m_Layer: 0
   m_Name: Food_Wine_01
   m_TagString: Untagged
@@ -136,3 +137,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.24241091, y: 0.95899785, z: 0.24241088}
   m_Center: {x: 0, y: -0.00000005960464, z: 0}
+--- !u!114 &2138568409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483640510505252355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c97aea24b6fb145aba93cd54e75b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
