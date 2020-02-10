@@ -301,7 +301,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 10
-  gravityModifier: 0
+  gravityModifier: 1
+  isOnGround: 1
 --- !u!65 &367289721
 BoxCollider:
   m_ObjectHideFlags: 0
