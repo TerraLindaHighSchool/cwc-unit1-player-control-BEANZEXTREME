@@ -350,8 +350,9 @@ GameObject:
   - component: {fileID: 715120709}
   - component: {fileID: 715120708}
   - component: {fileID: 715120707}
-  - component: {fileID: 715120706}
   - component: {fileID: 715120710}
+  - component: {fileID: 715120711}
+  - component: {fileID: 715120706}
   m_Layer: 0
   m_Name: yourmom(not money)
   m_TagString: Untagged
@@ -359,8 +360,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &715120706
-BoxCollider:
+--- !u!136 &715120706
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -369,8 +370,9 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 0.75
+  m_Height: 0.75
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &715120707
 MeshRenderer:
@@ -427,7 +429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715120705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.51, y: 2.8, z: -0.6}
+  m_LocalPosition: {x: 4.51, y: 1.28, z: -0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -449,6 +451,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &715120711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715120705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1090251c737cea74bbea97ed6833a775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &721744444
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721744444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.91, z: -7.72}
+  m_LocalPosition: {x: 0, y: 1.84, z: -7.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -573,6 +588,8 @@ GameObject:
   - component: {fileID: 736739496}
   - component: {fileID: 736739495}
   - component: {fileID: 736739499}
+  - component: {fileID: 736739500}
+  - component: {fileID: 736739501}
   m_Layer: 0
   m_Name: monehy
   m_TagString: Untagged
@@ -649,7 +666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736739494}
   m_LocalRotation: {x: 0.09541142, y: 0, z: 0, w: 0.9954379}
-  m_LocalPosition: {x: -3.89, y: 1.24, z: 0.97}
+  m_LocalPosition: {x: -3.89, y: 0.59, z: 0.84}
   m_LocalScale: {x: 1, y: 0.07, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -671,6 +688,38 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &736739500
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736739494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f528da2679b79a94cbf0899d1bf3ba88, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &736739501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736739494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1090251c737cea74bbea97ed6833a775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &777107407
 GameObject:
   m_ObjectHideFlags: 0
